@@ -78,7 +78,7 @@ THINGSPEAK_MIN_INTERVAL = 15.0
 _last_thingspeak_post = {"actual": 0.0, "pred": 0.0}
 
 # ========= LOOP / HISTORY SETTINGS =========
-SLEEP_SEC       = 10      # internal loop cadence (predictions can run fast; pushes are rate-limited)
+SLEEP_SEC       =  0.001   # internal loop cadence (predictions can run fast; pushes are rate-limited)
 POST_ACTUALS    = True
 MAX_RETRIES     = 3
 
@@ -630,3 +630,4 @@ except KeyboardInterrupt:
     print("\nStopped by KeyboardInterrupt (Ctrl+C).")
 
 print("Done.")
+
